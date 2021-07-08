@@ -21,8 +21,6 @@ faces = face_cascade.detectMultiScale(
 	minSize=(30, 30),
 )
 
-print("Found {0} faces in the image.".format(len(faces)))
-
 # Drawing rectangle around the faces.
 for x, y, w, h in faces:
 	cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
